@@ -1,0 +1,458 @@
+// ==UserScript==
+// @name         Heimaey Theme
+// @namespace    Custom Theme for Heimaey
+// @version      1.0
+// @description  New Heimaey theme
+// @author       Renzooo
+// @match        https://shellshock.io/*
+// @match        https://dev.shellshock.io/*
+// @match        https://staging.shellshock.io/*
+// @match        https://algebra.best/*
+// @match        https://algebra.vip/*
+// @match        https://biologyclass.club/*
+// @match        https://deadlyegg.com/*
+// @match        https://deathegg.world/*
+// @match        https://egg.dance/*
+// @match        https://eggboy.club/*
+// @match        https://eggboy.xyz/*
+// @match        https://eggcombat.com/*
+// @match        https://eggfacts.fun/*
+// @match        https://egghead.institute/*
+// @match        https://eggisthenewblack.com/*
+// @match        https://eggsarecool.com/*
+// @match        https://eggshooter.best/*
+// @match        https://geometry.best/*
+// @match        https://geometry.monster/*
+// @match        https://geometry.pw/*
+// @match        https://geometry.report/*
+// @match        https://hardboiled.life/*
+// @match        https://hardshell.life/*
+// @match        https://humanorganising.org/*
+// @match        https://mathactivity.xyz/*
+// @match        https://mathdrills.info/*
+// @match        https://mathdrills.life/*
+// @match        https://mathfun.rocks/*
+// @match        https://mathgames.world/*
+// @match        https://math.international/*
+// @match        https://mathlete.fun/*
+// @match        https://mathlete.pro/*
+// @match        https://new.shellshock.io/*
+// @match        https://overeasy.club/*
+// @match        https://scrambled.best/*
+// @match        https://scrambled.tech/*
+// @match        https://scrambled.today/*
+// @match        https://scrambled.us/*
+// @match        https://scrambled.world/*
+// @match        https://shellsocks.com/*
+// @match        https://shellshockers.club/*
+// @match        https://shellshockers.site/*
+// @match        https://shellshockers.us/*
+// @match        https://shellshockers.world/*
+// @match        https://shellshockers.xyz/*
+// @match        https://softboiled.club/*
+// @match        https://urbanegger.com/*
+// @match        https://violentegg.club/*
+// @match        https://violentegg.fun/*
+// @match        https://yolk.best/*
+// @match        https://yolk.life/*
+// @match        https://yolk.quest/*
+// @match        https://yolk.rocks/*
+// @match        https://yolk.tech/*
+// @match        https://yolk.today/*
+// @match        https://zygote.cafe/*
+// @grant        none
+// @icon         https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg
+// ==/UserScript==
+
+(function () {
+    const addScript = () => {
+        document.title="Heimaey Theme"
+        document.head.innerHTML += `<style>
+
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+    --ss-transparent: #00000000;
+    --ss-black: #000;
+    --ss-adblocker-text: #003449;
+    --ss-white: #FFFFFF;
+    --ss-offwhite: #FFF3E4;
+    --ss-yellow0: #F7FFC1;
+    --ss-yellow: #FAF179;
+    --ss-yolk0: #f1c59a;
+    --ss-yolk: #008000;
+    --ss-yolk2: #d97611;
+    --ss-red0: #e29092;
+    --ss-red: #d15354;
+    --ss-red2: #801919;
+    --ss-egg-org: #EE2524;
+    --ss-red-bright: #EF3C39;
+    --ss-pink: #00c000;
+    --ss-pink1: #b9006e;
+    --ss-pink-light: #ff3aaf;
+    --ss-pink-dark: #a7098c;
+    --ss-brown: #924e0c;
+    --ss-blue00: #003900;
+    --ss-blue0: #c8edf8;
+    --ss-blue1: #19bd21;
+    --ss-blue2: #19bd21;
+    --ss-blue3: #006601;
+    --ss-blue4: #00f000;
+    --ss-blue5: #008000;
+    --ss-blue6: #19bd21;
+    --ss-blue7: #00c0ff;
+    --ss-blue8: #006601;
+	--ss-green0: #87ddbb;
+	--ss-green1: #13BA65;
+	--ss-green2: #046306;
+	--ss-green-login: #13ba65;
+	--ss-orange1: #F79520;
+	--ss-vip-blue: #0E7FFF;
+	--ss-vip-pink: #FF5AF5;
+	--ss-vip-brown: #9F5600;
+	--ss-vip-yellow: #FFFC00;
+	--ss-vip-red: #EE2B2D;
+	--ss-vip-purple: #40008F;
+	--ss-vip-gold: linear-gradient(to right, #D1A943, #CFCDAF, #CC8630, #D1AA44, #CC8630);
+	--ss-vip-store-bg: linear-gradient(to right bottom, #fffbee, #fff3ca, #ffeaa5, #ffe180, #ffd759, #f4c843, #eab82a, #dfa900, #c79200, #ae7d00, #966800, #7e5400);
+	--ss-gold: #FED838;
+	--ss-clear: rgba(255, 255, 255, 0);
+	--ss-blue2clear: rgba(94, 186, 217, 0);
+	--ss-blue2alpha7: rgba(94, 186, 217, .7);
+	--ss-white-60: rgba(255,255,255,.6);
+	--ss-white-90: rgba(255,255,255,.9);
+	--ss-twitch: #6441a5;
+    --twitch-color: #6441a5;
+	--twitch-yellow: #FFFE61;
+	--twitch-pink: #F00DC9;
+	--twitch-dk-pink: #c00aa0;
+	--twitch-lt-purple: #9146FF;
+	--twitch-dk-purple: #40008F;
+	--twitch-xtr-dk-purple: #1e0043;
+	--egg-pack-small-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,249,255,1) 50%);
+	--egg-pack-md-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(216,158,252,1) 50%);
+	--egg-pack-lg-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(252,174,201,1) 50%);
+	--bundle-color: #FF57DD;
+	--bundle-text-color: #7A23C6;
+	--ss-orange: #F7941D;
+	--ss-brown-2: #894B00;
+	--ss-vip: #00c000;
+	--ss-red-btn-fill: #E81616;
+	--ss-red-btn-outline: #881A1A;
+	--ss-limited: #ffb3e8;
+	--ss-limited-txt: #ff1bba;
+	--ss-premium: #87ec4a;
+	--ss-premium-txt: #204908;
+	--ss-vip-txt: #00c000;
+	--ss-darkoverlay: rgba(0, 0, 0, 0.6);
+	--ss-darkoverlay2: rgba(0, 0, 0, 0.2);
+	--ss-lightoverlay: url(https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg);
+	--ss-lightbackground: linear-gradient(var(--ss-blue1), var(--ss-blue2) );
+	--ss-popupbackground: url(https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg);
+	--ss-blueblend1: linear-gradient(#349ec1, #5fbad8);
+	--ss-scrollmask1: linear-gradient(var(--ss-blue2clear), var(--ss-blue00));
+	--ss-scrollmask2: linear-gradient(rgba(56, 158, 192, 0), #389EC0);
+	--ss-fieldbg: linear-gradient(#91CADB, #ffffff, #ffffff, #ffffff, #ffffff);
+	--ss-nugSecs: 3600s;
+	--ss-me-player-bg: url(https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg);
+               /*new team color*/
+
+              */new team color/*
+	--ss-big-message-border-color: rgb(0, 0, 0);
+	--ss-header-height: 10em;
+	--ss-footer-height: 4em;
+	--ss-main-width: 90em;
+	--ss-min-width: 68em;
+	--ss-space-xxxxl: calc(var(--ss-space-lg)*4);
+	--ss-space-xxl: 2.3em;
+	--ss-space-xl: 1.5em;
+	--ss-space-lg: 1em;
+	--ss-space-md: calc(var(--ss-space-lg)/2);
+	--ss-space-sm: calc(var(--ss-space-md)/1.5);
+	--ss-space-xs: calc(var(--ss-space-sm)/2);
+	--ss-space-micro: calc(var(--ss-space-xs)/2);
+	--border-radius: 0.4em;
+	--ss-border-radius-sm: 0.2em;
+	--ss-common-border-width: .2em;
+	/* Element dimensions */
+	--ss-logo-width: calc(var(--ss-space-lg)*14);
+	--ss-menu-width: calc(var(--ss-logo-width) - var(--ss-space-lg));
+	--ss-main-sidebar-width: 16em;
+	--ss-sidebar-width: calc(var(--ss-space-lg)*18.2);
+	--ss-aside-panel-width: 20em;
+	--ss-item-mask-height: calc(var(--ss-space-lg)*4);
+	--ss-item-mask-width: calc(var(--ss-aside-panel-width) - 1.3em);
+	--ss-item-box: calc(var(--ss-space-lg)*5.5);
+	--ss-account-panel-height: calc(var(--ss-space-lg)*4);
+	--ss-chat-wrapper-width: 14.5em;
+	--ss--chat-height: 14.5em;
+	--ss-media-social-width: 17.7em;
+	--paused-ui-scale: .6;
+	--paused-ui-vip-scale: .9;
+	--chw-bubble-width: 9em;
+	--chw-bubble-height: 3.3em;
+	--home-screen-r-padding: .68em;
+	/* shadows */
+	--ss-box-shadow-1:  .16em .16em 0 rgba(11, 147, 189,.5);
+	--ss-box-shadow-2: .15em .15em 0 rgba(11, 147, 189,.9);
+	--ss-box-shadow-3: .15em .15em 0 rgba(217,118,17,.9);
+    --ss-text-shadow-1: .1em .1em 0 rgba(11, 147, 189,.8);
+	--ss-shadow: rgba(0,0,0,.4);
+	--ss-btn-common-txt-shadow: .1em .1em 0 rgb(0 0 0 / 30%);
+	--ss-btn-common-txt-shadow-blur: .1em .1em .5em rgb(0 0 0 / 30%);
+	--ss-shadow-filter: drop-shadow(var(--ss-btn-common-txt-shadow));
+	/* button bevel */
+	--ss-btn-light-bevel: inset 0 .15em .2em;
+	--ss-btn-dark-bevel: inset -.1em -.15em .1em;
+	--ss-border-blue5: var(--ss-common-border-width) solid var(--ss-blue5);
+	--ss-type-icon-size: 2.8em;
+	--ss-equip-icon-size: 4em;
+	--ss-media-stats-height: 30.5em;
+	--gauge-timer-sec: 2deg;
+	--gauge-value-start: 0deg;
+	--gauge-value-end: 180deg;
+	--gauge-value: 180deg;
+	--gauge-shadow-blur: 2em;
+
+
+
+}
+
+
+        .btn_green, .btn_red, .btn_yolk, .ico_itemtype, .chw-progress-bar-inner, .chw-progress-bar-wrap {
+        background: url("https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg") center center no-repeat;background-size:cover;
+        color: #008000;
+        border-color: #00f000;
+        box-shadow: 4px 4px #008000 !important;
+        text-shadow: 2px 2px #00f000 !important;
+        }
+        .btn_blue, .btn_blue_light, .btn_game_mode , .bevel_twitch, #joinPrivateGamePopup .ss_button, .option-box {
+        background: url("https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg") center center no-repeat;background-size:cover;
+        color: #008000;
+        border-color: #008000;
+        box-shadow: 4px 4px #008000 !important;
+        text-shadow: 2px 2px #00f000 !important;
+        }
+
+      .house-ad-wrapper {
+            display: none !important;
+        }
+        .free-games-logo {
+        display: none;
+        }
+        .free-games-title {
+        line-height: 10;
+        display: none;
+        }
+
+.crosshair {
+	position: absolute;
+	transform-origin: 50% top;
+	top: 50%;
+	border: solid 0.05em black;
+	height: 0.8em;
+	margin-bottom: 0.12em;
+	opacity: 100;
+}
+
+.crosshair.normal {
+	left: calc(50% - 0.15em);
+	background: #00c000;
+	width: 0.3em;
+}
+
+.crosshair.powerful {
+	left: calc(50% - 0.25em);
+	background: #00a000;
+	width: 0.5em;
+}
+#reticleDot {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background: #00c000;
+	border: solid 0.01em #00c000;
+	width: 0.1.5em;
+	height: 0.1.5em;
+	opacity: 1;
+}
+
+.shotReticle.fill.normal {
+    border-color: #00c000;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    border-width: 0.em;
+    padding: 0.5em;
+}
+
+.shotReticle.fill.powerful {
+	border-color: #00a000;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.3em;
+	padding: 0.1em;
+}
+
+.shotReticle.border.normal {
+	border-color: #00c000;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.1em;
+}
+
+.shotReticle.border.powerful {
+	border-color: #00a000;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.1em;
+}
+
+#grenadeThrowContainer {
+	position: absolute;
+	display: flex;
+	visibility: hidden;
+	align-items: flex-end;
+	top: 50%;
+	left: 50%;
+	transform: translate(-6em, -3em);
+	width: 1em;
+	height: 6em;
+	background: #000000;
+	border-radius: 0.3em;
+	padding: 0.25em;
+}
+
+#grenadeThrow {
+	width: 100%;
+	height: 50%;
+	border-radius: 0.05em;
+	background: url(https://images7.alphacoders.com/135/1356530.jpeg);
+}
+        #healthContainer {
+	    background: url("https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg") center center no-repeat;background-size:cover;
+        }
+        .healthBar {
+    	stroke: #00f000;
+        }
+        .healthYolk {
+	    fill: #FFFFFF00;
+        }
+        #healthHp {
+	    color: #00f000;
+        }
+#maskmiddle {
+    background: url('https://myclientsites.com/adamx/toxictheme/scope.png') center center no-repeat;
+    background-size: contain;
+    width: 100vh;
+    height: 100vh;
+}
+
+#maskleft, #maskright {
+    background: black;
+    flex: 1;}
+
+#inGameUI .title {
+    font-size: .8em;
+    color: #00f000;
+}
+
+        .pause-ui-element, #inGameUI {
+	    background: #FFFFFF00;!Important;
+	    border-color:  #00c000 !important;
+	    opacity: 1;
+        }
+
+
+
+
+.stat-wrapper .stat:nth-child(even) > div {
+        background: #00f000 !important;
+        }
+        .stat-wrapper .stat:nth-child(odd) > div {
+	    background: #00a000 !important;
+        }
+        .stat-grid-main-header {
+	    border-color: #00a000;
+        }
+
+
+.playerSlot-player-is-me {
+	    background: url("https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg") center center no-repeat;background-size:cover !important;
+	    color: #FFFFFF !important;
+        }
+
+.playerSlot--icons .vip-egg {
+	text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  content: url('https://i.imgur.com/QVToi8d.png') !important;
+  max-height: 1.1em;
+  max-width: 1.1em;
+  }
+
+
+
+.in-game-notification {
+    background: none;
+    }
+
+
+
+
+#ico-checkmark path {
+        fill: #X !important;
+        }
+        .player-challenge-single-reward img{
+        width: 1em;
+        content: url("https://i.imgur.com/QVToi8d.png");
+        }
+        .player-challenges-container {
+        width: X%;
+        background: url(https://raw.githubusercontent.com/Renzooo-cyber/IMG/refs/heads/main/1356530.jpeg);
+               }
+        .player-challenge-single .checkmark-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 3em solid rgba(X,X,X,X) ;
+        border-right: 3em solid transparent;
+        }
+
+
+
+
+.egg_icon {
+    height: 1.6em;
+    margin: var(--ss-space-micro) var(--ss-space-sm) 0 0;
+    content: url('https://i.imgur.com/QVToi8d.png'); /*Modified: .egg_icon | Previously:'Blank, added extra line'*/
+  }
+
+  .egg_count {
+    width: auto;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #00f000;
+  }
+.healthBar-hardBoiled {
+    stroke: var(--ss-blue4);
+    stroke-dasharray: 18em
+}
+
+
+.is-paused .pause-ui-element {
+    background-color: rgb(0 192 0 / 40%);
+    border: var(--ss-common-border-width) solid var(--ss-blue5);
+    bottom: 0;
+    width: var(--ss-chat-wrapper-width);
+    height: var(--ss--chat-height);
+    left: 0
+}
+
+
+
+</style>`
+    }
+    document.body ? addScript() : document.addEventListener("DOMContentLoaded", e => addScript());
+})();
